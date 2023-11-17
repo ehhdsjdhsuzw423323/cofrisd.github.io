@@ -1,0 +1,610 @@
+@font-face {
+    font-family: Italic;
+    src: url(fonts/ita.ttf);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Regular;
+    src: url(fonts/reg.ttf);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Semibold;
+    src: url(fonts/sb.ttf);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Semitalic;
+    src: url(fonts/sbita.ttf);
+    font-display: swap;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #AEB2BA; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #90949b; 
+  }
+
+  ::-moz-selection { /* Code for Firefox */
+    color: rgb(0, 0, 0);
+    background: yellow;
+  }
+  
+  ::selection {
+    color: rgb(255, 255, 255);
+    background: rgb(0, 0, 0);
+  }
+
+  @keyframes FRA{
+    0%{
+        transform: translateY(1rem);
+    }
+    50%{
+        transform: translateY(0rem);
+    }
+    100%{
+        transform: translateY(1rem);
+    }
+}
+
+@keyframes FRA2{
+    0%{
+        opacity: 100%;
+    }
+    50%{
+        opacity: 50%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-display: swap;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'regular';
+    color: black;
+}
+
+.hleft{
+    float: left;
+    padding-left: 6rem;
+    padding-top: 2rem;
+    font-size: 2.5rem;
+    font-family: 'Semibold';
+}
+
+.hh1{
+    color: #AEB2BA;
+}
+
+.hright{
+    float: right;
+    padding-top: 2rem;
+    padding-right: 6rem;
+    font-family: 'Italic';
+}
+
+.section-1{
+    position: relative;
+    width: 100%;
+    height: 93vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.flag{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 50%;
+    rotate: -30deg;
+    filter: grayscale(100%);
+    transition: all .6s;
+    animation: FRA forwards 3s infinite;
+    animation-timing-function: linear;
+    
+}
+
+
+
+
+
+.section-1 p{
+    font-size: 2.3rem;
+    font-family: 'Regular';
+    padding-left: 6rem;
+
+}
+
+.section-1 h1{
+    font-size: 8.3rem;
+    font-family: 'Semibold';
+    padding-left: 6rem;
+    line-height: 9.5rem;
+}
+
+.section-1 .hs1{
+    color: white;
+    font-family: 'Semitalic';
+    background-color: #000000;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    transition: all .5s;
+}
+
+.hs1:hover{
+    border-radius: 2rem;
+}
+
+.section-1 a{
+    background-color: #030712;
+    padding: 10px 10px;
+    text-align: center;
+    margin-left: 6rem;
+    margin-right: 85%;
+    border-radius: 6rem;
+    color: white;
+    margin-top: 1.5rem;
+    font-size: 2rem;
+    transition: all .4s;
+    border: 2px #030712 solid;
+
+}
+
+.arrow {
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 4.8px;
+}
+
+.arrowi{
+    border: solid black;
+    border-width: 0 .5px .5px 0;
+    display: inline-block;
+    margin-left: .5rem;
+    padding-top: .4rem;
+    padding-bottom: .4rem;
+    padding-left: .4rem;
+    padding-right: .4rem;
+}
+  
+  .right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.section-1 a:hover{
+    background-color: #000000;
+    border: 2px #AEB2BA solid;
+}
+
+.column-1 {
+    background-image: url(images/flag.jpg);
+    filter: grayscale(80%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10px;
+    flex: 25%;
+    transition: all .8s;
+    margin-left: 6rem;
+    margin-right: 3rem;
+    border-radius: 2rem;
+
+}
+
+.column-2 {
+    background-image: url(images/winning.jpg);
+    filter: grayscale(80%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10px;
+    flex: 25%;
+    transition: all .8s;
+    border-radius: 2rem;
+}
+
+.column-3 {
+    background-image: url(images/money.jpg);
+    filter: grayscale(80%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10px;
+    flex: 25%;
+    transition: all .8s;
+    border-radius: 2rem;
+    margin-right: 10rem;
+    margin-left: 3rem;
+}
+
+.column-1:hover{
+    transform: translateY(-1rem);
+    border-radius: 3rem;
+    filter: none;
+}
+
+.column-2:hover{
+    transform: translateY(-1rem);
+    border-radius: 3rem;
+    filter: none;
+}
+
+.column-3:hover{
+    transform: translateY(-1rem);
+    border-radius: 3rem;
+    filter: none;
+}
+
+.section-2{
+    width: 100%;
+    display: flex;
+    padding-top: 15rem;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    padding-bottom: 15rem;
+}
+
+.section-2 .s2h{
+    font-size: 5.7rem;
+    font-family: 'Semibold';
+    padding-left: 6rem;
+    line-height: 9.5rem;
+    color: black;
+    padding-bottom: 3rem;
+}
+
+.section-2 h1{
+    font-size: 3.5rem;
+    font-family: 'Semibold';
+    padding-left: 2rem;
+    padding-top: 1rem;
+    line-height: 3.2rem;
+    color: white;
+}
+
+.section-2 p{
+    font-size: 2rem;
+    font-family: 'Regular';
+    padding-left: 2rem;
+    padding-top: 1.7rem;
+    padding-bottom: 4rem;
+    line-height: 2.5rem;
+    color: white;
+}
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+.section-3{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    padding-top: 5rem;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    padding-bottom: 2rem;
+
+}
+
+.section-3 h1{
+    font-size: 3.5rem;
+    font-family: 'Semibold';
+}
+
+.section-3 h2{
+    font-size: 30rem;
+    animation: FRA2 forwards 5s infinite;
+    line-height: 25rem;
+
+}
+
+.section-4{
+    width: 100%;
+    display: flex;
+    padding-top: 15rem;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    padding-bottom: 30rem;
+    padding-left: 6rem;
+    color: white;
+}
+
+.section-4 h1{
+    font-size: 5.7rem;
+    font-family: 'Semibold';
+    line-height: 9.5rem;
+    color: black;
+    padding-bottom: 3rem;
+}
+
+.section-4 p{
+    font-size: 3.5rem;
+    font-family: 'Semibold';
+    padding-left: 1rem;
+    line-height: 3.2rem;
+}
+
+.box1{
+    background-color: black;
+    border-radius: 4rem;
+    padding: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 80%;
+    border: solid 2px black;
+    transition: all .3s;
+}
+
+.box1:hover{
+    background-color: transparent;
+    color: black;
+}
+
+.last{
+    background-color: black;
+    width: 100%;
+    display: flex;
+    padding-top: 3rem;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    padding-bottom: 2rem;
+    text-align: center;
+    color: white;
+}
+
+.last h1{
+    font-size: 3rem;
+    font-family: 'Semibold';
+    color: white;
+}
+
+.last p{
+    font-size: 1.5rem;
+    font-family: 'Regular';
+    color: white;
+}
+
+.last h2{
+    font-size: 2rem;
+    padding-top: 3rem;
+}
+
+.hh2{
+    color: #AEB2BA;
+}
+
+.last a{
+    background-color: #ffffff;
+    text-align: center;
+    border-radius: 6rem;
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    transition: all .4s;
+    margin-top: 2rem;
+    padding: 1rem;
+    margin-left: 45%;
+    margin-right: 45%;
+
+}
+
+@media screen and (max-width: 64em){
+
+    .section-1 h1{
+        font-size: 6.3rem;
+        line-height: 6.5rem;
+    }
+
+    .section-1 p{
+        font-size: 2rem;
+    }
+
+    .section-1 a{
+        margin-right: 75%;
+        font-size: 2rem;
+    }
+
+    .flag{
+        display: none;
+    }
+
+    .section-2 h1{
+        font-size: 3rem
+    }
+
+    .section-2 p{
+        font-size: 1.5rem;
+    }
+
+    .section-2 .s2h{
+        font-size: 5rem;
+        padding-bottom: 1rem;
+    }
+
+    .column-1{
+        margin-right: 2rem;
+        width: 26%;
+        padding-bottom: 0rem;
+
+    }
+
+    .column-2{
+        margin-right: 2rem;
+        width: 26%;
+        padding-bottom: 0rem;
+    }
+
+    .column-3{
+        width: 26%;
+        padding-bottom: 0rem;
+
+    }
+
+    .section-4 h1{
+        font-size: 5rem;
+    }
+
+    .section-4 p{
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 35.5em){
+    .section-1 h1{
+        font-size: 6rem;
+        padding-left: 3rem;
+    }
+
+    .section-1 p{
+        font-size: 1.5rem;
+        padding-left: 3rem;
+    }
+
+    .section-1 a{
+        margin-right: 55%;
+        font-size: 1.5rem;
+        margin-left: 3rem;
+    }
+
+    .hleft{
+        padding-left: 3rem;
+        float:none;
+    }
+
+    .hright{
+        padding-top: 0rem;
+        padding-left: 3rem;
+        float:none;
+    }
+
+    .section-2 h1{
+        font-size: 2.7rem;
+    }
+
+    .section-2 p{
+        font-size: 2rem;
+        padding-top: 1rem;
+    }
+
+    .section-2 .s2h{
+        font-size: 3.5rem;
+        padding-left: 3rem;
+        padding-bottom: 0rem;
+    }
+
+    .column-1{
+        margin-left: 3rem;
+        flex: 100%;
+        margin-right: 3rem;
+
+    }
+
+    .column-2{
+        margin-left: 3rem;
+        flex: 100%;
+        margin-right: 3rem;
+        margin-top: 2rem;
+    }
+
+    .column-3{
+        flex: 100%;
+        margin-right: 3rem;
+        margin-top: 2rem;
+    }
+
+    .header{
+        background-color: #ececec;
+        padding-bottom: 1rem;
+    }
+
+    .section-3 {
+        font-size: 1.5rem;
+    }
+    
+    .section-4{
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    .section-4 h1{
+        font-size: 3.5rem;
+        line-height: 3.5rem;
+    }
+
+    .section-4 p{
+        font-size: 2.7rem;
+    }
+
+    .box1{
+        border-radius: 3rem;
+        padding: 2rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        width: 100%;
+        border: solid 2px black;
+        transition: all .3s;
+    }
+
+    .last a{
+        font-size: 1.5rem;
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+
+    .last p{
+        font-size: 1.5rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    .section-3 h1{
+        font-size: 3rem;
+        font-family: 'Semibold';
+    }
+    
+    .section-3 h2{
+        font-size: 20rem;
+        animation: FRA2 forwards 5s infinite;
+    }
+}
+
